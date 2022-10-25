@@ -18,35 +18,40 @@
     </header>
 
     <div class="container-fluid">
+    <div class="row">
         <div class="col-sm-3">
             <h3 class="text-center">Search for a City:</h3>
             <input type="text" placeholder="Enter a city name" class="form-control mb-3" id="city-input">
             <button class="btn btn-primary btn-block" type="submit" id="search-button">Search <i
-                    class="fas fa-search"></i></button>
-            <button class="btn btn-primary btn-block" type="button" id="clear-button">Clear History</button>
-            <hr>
-            <form id="history"></form>
-        </div>
-        <div class="col-lg-9">
-            <div class="row mr-0 d-none" id="weather-card">
-                <div class="card-body">
-                    <h3 id="city-name" class="text-center"></h3> <img id="current-picture"></img><br>
-                    <h2 id="todays-date" class="text-center"></h2>
-                    <p id="temperture"></p>
-                    <p id="wind"></p>
-                    <p id="humidity"></p>
-                </div>
+                class="fas fa-search"></i></button>
+                <button class="btn btn-primary btn-block" type="button" id="clear-button">Clear History</button>
+                <hr>
+                <form id="history"></form>
             </div>
-            <div class="row d-none" id="forecast-report">
-                <h3>5-Day Forecast</h3>
-                <div class="col-md-2 forecast bg-dark text-white m-2 rounded"></div>
-                <div class="col-md-2 forecast bg-dark text-white m-2 rounded"></div>
-                <div class="col-md-2 forecast bg-dark text-white m-2 rounded"></div>
-                <div class="col-md-2 forecast bg-dark text-white m-2 rounded"></div>
-                <div class="col-md-2 forecast bg-dark text-white m-2 rounded"></div>
+            <div class="col-m-9">
+                <div class="row mr-0 d-none" id="weather-card">
+                    <div class="col-lg-11 m-3 card-body">
+                        <h3 id="city-name" class="text-center"></h3> <img id="current-picture"></img><br>
+                        <h2 id="todays-date" class="text-center"></h2>
+                <p id="temperture"></p>
+                <p id="wind"></p>
+                <p id="humidity"></p>
             </div>
         </div>
     </div>
+    <div class="row d-none" id="forecast-report">
+        <div class="col-12">
+            <h3 class="text-center">5-Day Forecast</h3>
+        </div>
+        <div class="col-md-2 forecast bg-dark text-white m-2 rounded"></div>
+        <div class="col-md-2 forecast bg-dark text-white m-2 rounded"></div>
+        <div class="col-md-2 forecast bg-dark text-white m-2 rounded"></div>
+        <div class="col-md-2 forecast bg-dark text-white m-2 rounded"></div>
+        <div class="col-md-2 forecast bg-dark text-white m-2 rounded"></div>
+    </div>
+</div>
+</div>
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
